@@ -1,0 +1,20 @@
+  <h1>Welcome to user-management application</h1>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary active" (click)="ontoggleadmin('true')">Admin</button>
+    <button type="button" class="btn btn-primary" (click)="ontoggleadmin('false')">User</button>
+  </div>
+  
+  <div>
+    <p>Email Id</p>
+    <input type="text" [(ngModel)]="email">
+    <p>Password</p>
+  <input type="password"[(ngModel)]="password">
+  
+  <div>
+    <button type="button" class="btn btn-info" (click)="login()">LOGIN</button>
+    <button type="button" 
+    class="btn btn-info" 
+    (click)="register()"
+    routerLink="/register">REGISTER</button>
+  </div>
+  </div>

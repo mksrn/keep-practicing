@@ -1,0 +1,11 @@
+  <h1>Register Here</h1>
+  <div class="inputfield">
+        <p>Name</p><input type="text" placeholder="Name"  [(ngModel)]="name">
+        <p>Mobile</p><span>+91</span><input type="number" size="10" placeholder="98756*****" [(ngModel)]="mobile">
+        <p>Address</p><input type="text" placeholder="Address" [(ngModel)]="address">
+        <p>Email Id</p><input type="email" placeholder="email" [(ngModel)]="email">
+        <p>Password</p><input type="password" placeholder="Password" [(ngModel)]="password">
+        <button type="button" class="btn btn-info" (click)="onregister()">REGISTER</button>
+        <button type="button" class="btn btn-info" routerLink="/login">CANCEL</button>
+  
+  </div>

@@ -1,0 +1,15 @@
+<h1>Welcome to User Management System Application</h1>
+<table>
+    <thead>
+       <tr>
+           <th>Name</th><th>mobile</th><th>address</th><th>email</th><th>active</th><th>role</th>
+       </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let user of alluserdetails">
+        <td>{{user.name}}</td><td>{{user.mobile}}</td>
+        <td>{{user.address}}</td><td>{{user.email}}</td>
+        <td>{{user.active}}</td><td>{{user.role}}</td> 
+       </tr>
+    </tbody>
+</table>
